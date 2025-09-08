@@ -1,0 +1,11 @@
+Data Peserta Bootcamp Digital Skill - Golang Backend Development
+1. Nama: Adrian Syah Abidin 
+2. Email: adrian 
+3. Sistem Operasi yang digunakan: windows 11
+4. Akun Github: Adrian463588 
+5. Akun Telegram: - 
+6. Role Pekerjaan (BE/FE/DEVOPS/MAHASISWA) : Mahasiswa 
+7. Umur: 23 
+8. Pernah menggunakan Go? : belum
+9. Bahasa Pemrograman yg pernah dipelajari: python
+10. Pernah membuat REST API? : belum
