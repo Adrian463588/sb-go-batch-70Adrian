@@ -1,4 +1,4 @@
-````
+
 # Bukti Koneksi: API Gin (Go) dengan Database PostgreSQL
 
 Dokumen ini menunjukkan bukti bahwa aplikasi API yang dibangun menggunakan framework **Gin** di Go telah berhasil terhubung dan dapat melakukan operasi **tulis (write)** ke database **PostgreSQL**.
@@ -7,24 +7,24 @@ Dokumen ini menunjukkan bukti bahwa aplikasi API yang dibangun menggunakan frame
 
 ## 📌 Skenario Pengujian
 
-1. Client mengirimkan request `POST` ke endpoint `/bioskop` pada API server.
-2. API Server (Gin) menerima data, memprosesnya, dan menyimpannya ke dalam tabel `bioskops` di database PostgreSQL.
-3. API Server (Gin) mengembalikan respon **201 Created** beserta data yang baru saja dibuat, yang kini sudah memiliki **ID dari database**.
-4. Database (PostgreSQL) diverifikasi untuk memastikan data tersebut benar-benar tersimpan secara permanen.
-5. Bukti tambahan berupa rekaman proses penambahan data dapat dilihat di sini: [Jam.dev Recording](https://jam.dev/c/43d931d0-fde0-400b-a63f-f5dbe5f685f2?startFrom=0.00).
+1. Client mengirimkan request `POST` ke endpoint `/bioskop` pada API server.  
+2. API Server (Gin) menerima data, memprosesnya, dan menyimpannya ke dalam tabel `bioskops` di database PostgreSQL.  
+3. API Server (Gin) mengembalikan respon **201 Created** beserta data yang baru saja dibuat, yang kini sudah memiliki **ID dari database**.  
+4. Database (PostgreSQL) diverifikasi untuk memastikan data tersebut benar-benar tersimpan secara permanen.  
+5. Bukti tambahan berupa rekaman proses penambahan data dapat dilihat di sini: [Jam.dev Recording](https://jam.dev/c/43d931d0-fde0-400b-a63f-f5dbe5f685f2?startFrom=0.00).  
 
 ---
 
 ## 🔹 Langkah 1: Pengiriman Request dari Client
 
 Sebuah request `POST` dikirimkan ke `http://localhost:8080/bioskop` menggunakan **Postman**.  
-Request body berisi data bioskop baru dalam format JSON.
+Request body berisi data bioskop baru dalam format JSON.  
 
 **Detail Request:**
 
-- Method: `POST`
-- URL: `http://localhost:8080/bioskop`
-- Body (raw JSON):
+- Method: `POST`  
+- URL: `http://localhost:8080/bioskop`  
+- Body (raw JSON):  
 
 ```json
 {
@@ -32,7 +32,6 @@ Request body berisi data bioskop baru dalam format JSON.
   "lokasi": "Yogyakarta",
   "rating": 4.6
 }
-```
 ````
 
 ---
@@ -44,8 +43,8 @@ Respon ini menandakan bahwa data telah berhasil dibuat.
 
 **Detail Response:**
 
-- Status Code: `201 Created`
-- Body (JSON):
+* Status Code: `201 Created`
+* Body (JSON):
 
 ```json
 {
@@ -81,11 +80,12 @@ Data untuk **"CGV Jwalk Mall" dengan id 2** berhasil ditemukan dalam tabel.
 
 Berdasarkan alur pengujian di atas:
 
-- Request `POST` berhasil diterima dan diproses oleh server Gin.
-- Server mengembalikan respon **201 Created** dengan data yang sudah dilengkapi ID dari database.
-- Data tersebut terbukti ada dan tersimpan secara permanen di dalam tabel `bioskops` pada database PostgreSQL.
-- Bukti tambahan (rekaman langsung proses penambahan data) dapat dilihat di sini: [Jam.dev Recording](https://jam.dev/c/43d931d0-fde0-400b-a63f-f5dbe5f685f2?startFrom=0.00).
+* Request `POST` berhasil diterima dan diproses oleh server Gin.
+* Server mengembalikan respon **201 Created** dengan data yang sudah dilengkapi ID dari database.
+* Data tersebut terbukti ada dan tersimpan secara permanen di dalam tabel `bioskops` pada database PostgreSQL.
+* Bukti tambahan (rekaman langsung proses penambahan data) dapat dilihat di sini: [Jam.dev Recording](https://jam.dev/c/43d931d0-fde0-400b-a63f-f5dbe5f685f2?startFrom=0.00).
 
 ```
 
+Apakah Anda mau saya tambahkan juga **table format** (contoh hasil query `SELECT * FROM bioskops;`) supaya dokumentasinya terlihat lebih kuat sebagai bukti?
 ```
