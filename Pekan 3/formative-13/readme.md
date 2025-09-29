@@ -1,4 +1,4 @@
-````markdown
+````
 # Bukti Koneksi: API Gin (Go) dengan Database PostgreSQL
 
 Dokumen ini menunjukkan bukti bahwa aplikasi API yang dibangun menggunakan framework **Gin** di Go telah berhasil terhubung dan dapat melakukan operasi **tulis (write)** ke database **PostgreSQL**.
